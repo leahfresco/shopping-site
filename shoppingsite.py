@@ -66,7 +66,7 @@ def show_shopping_cart():
     total = 0
     # - get the cart dictionary from the session
     if 'cart' not in session:
-       return render_template("cart.html", melons=melons, total=total)
+       return render_template("cart.html", melons_list=melons_list, cart_total=total)
     
     cart = session['cart']
     # - create a list to hold melon objects and a variable to hold the total
